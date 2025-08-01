@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="output.css" >
+</head>
+<body>
+    
+   <nav class="flex justify-between max-w-[95%]  bg-blue-900 mx-auto rounded-md text-white py-7 px-7 items-center">
+      <div>
+         LOGO
+      </div>
+      <button id="menu-btn" class="md:hidden  text-3xl focus:outline-none"> &#9776</button>
+
+      <div class="hidden md:flex">
+         <a href="#" class=" py-4 px-10">Home</a>
+         <a href="#" class=" py-4 px-10">about</a>
+         <a href="#" class=" py-4 px-10">contact</a>
+         <a href="#" class=" py-4 px-10">menu</a>
+         
+      </div>
+    <!--for mibile-->
+      <div class=" hidden flex-col  md:hidden" id="mobile">
+         <a href="#" class=" py-4 px-10">Home</a>
+         <a href="#" class=" py-4 px-10">about</a>
+         <a href="#" class=" py-4 px-10">contact</a>
+         <a href="#" class=" py-4 px-10">menu</a>
+         
+      </div>
+   </nav>
+
+   <script>
+          const menubtn = document.getElementById("menu-btn");
+
+          const mobile = document.getElementById("mobile");
+
+          menubtn.addEventListener("click",()=>{
+            mobile.classList.toggle('hidden')
+          });
+
+         
+   </script>
+
+</body>
+
+</html>
