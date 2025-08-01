@@ -7,42 +7,64 @@
    <link rel="stylesheet" href="output.css" >
 </head>
 <body>
-    
-   <nav class="flex justify-between max-w-[95%]  bg-blue-900 mx-auto rounded-md text-white py-7 px-7 items-center">
-      <div>
-         LOGO
+    <div>
+      <!--Main container-->
+
+    <div class="flex  flex-col border-2 border-red-500 mb-10 relative  left-10 w-[30%] m-auto
+     shadow-lg shadow-red-950 rounded text-blue-900">
+      <!--for heading-->
+
+      <h1 class="text-center  font-bold">Our prising plans</h1>
+      <p class="text-center">Choose the plan that suits you best </p>
+
+    </div>
+
+    <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <!--for small containers-->
+
+      <div  class="border-2 px-6 border-blue-950 mx-10 shadow-md shadow-red-600  
+        transition-all duration-200 hover:bg-blue-800 rounded-lg">
+         <h3 class="text-blue-600 text-center">Basic</h3>
+         <p>$19/month</p>
+         <ul >
+            <li>✔ 5 Projects</li>
+            <li>✔ 10Gb Storage</li>
+            <li>✔ Email Support</li>
+         </ul>
+
+         <button class="bg-blue-700 rounded-md px-2  transition-all duration-200 hover:bg-blue-900 mb-4 mt-6">Choose Plan</button>
       </div>
-      <button id="menu-btn" class="md:hidden  text-3xl focus:outline-none"> &#9776</button>
+      <!--second card-->
+      
+      <div  class="border-2 transition-all duration-200 hover:bg-blue-800 px-6 border-blue-950 shadow-md shadow-red-600 rounded-lg">
+         <h3 class="text-blue-600 text-center">pro</h3>
+         <p>$49/month</p>
+         <ul >
+            <li>✔ 25 Projects</li>
+            <li>✔ 100Gb Storage</li>
+            <li>✔ priority Support</li>
+         </ul>
 
-      <div class="hidden md:flex">
-         <a href="#" class=" py-4 px-10">Home</a>
-         <a href="#" class=" py-4 px-10">about</a>
-         <a href="#" class=" py-4 px-10">contact</a>
-         <a href="#" class=" py-4 px-10">menu</a>
-         
+         <button class="bg-blue-700 rounded-md px-2  mb-4 mt-6  
+           transition-all duration-200 hover:bg-blue-900">Choose Plan</button>
       </div>
-    <!--for mibile-->
-      <div class=" hidden flex-col  md:hidden" id="mobile">
-         <a href="#" class=" py-4 px-10">Home</a>
-         <a href="#" class=" py-4 px-10">about</a>
-         <a href="#" class=" py-4 px-10">contact</a>
-         <a href="#" class=" py-4 px-10">menu</a>
-         
+     <!--Third card-->
+      
+      <div  class="border-2  transition-all duration-200 hover:bg-blue-800 px-6 border-blue-950 mx-10 shadow-md shadow-red-600 rounded-lg">
+         <h3 class="text-blue-600 text-center">Enterprise</h3>
+         <p>$99/month</p>
+         <ul >
+           <li>✔ 5 Unlimited Projects</li>
+            <li>✔ 1 TB Storage</li>
+            <li>✔24/7 Support</li>
+         </ul>
+
+         <button class="bg-blue-700    transition-all duration-200 hover:bg-blue-900 rounded-md px-2  mb-4 mt-6">Choose Plan</button>
       </div>
-   </nav>
 
-   <script>
-          const menubtn = document.getElementById("menu-btn");
+    </div>
 
-          const mobile = document.getElementById("mobile");
-
-          menubtn.addEventListener("click",()=>{
-            mobile.classList.toggle('hidden')
-          });
-
-         
-   </script>
-
+    </div>
 </body>
 
 </html>
